@@ -1,6 +1,3 @@
-
-
-
 #   TUPLAS
 
 """Una tupla es una colección ordenada e inmutable. 

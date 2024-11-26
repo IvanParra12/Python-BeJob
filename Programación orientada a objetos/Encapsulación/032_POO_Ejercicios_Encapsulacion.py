@@ -251,3 +251,4 @@ while zapatilla.get_stock() != nuevo_stock:
 
 # Mostrar el color, la talla, el stock y el precio final de la zapatilla
 print(f"Color final de la zapatilla: {zapatilla.get_color()}, Talla: {zapatilla.get_talla()}, Stock: {zapatilla.get_stock()}, Precio: {zapatilla.get_precio()}€")
+

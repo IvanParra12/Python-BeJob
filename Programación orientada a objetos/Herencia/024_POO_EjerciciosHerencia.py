@@ -99,7 +99,7 @@ print(perro.respirar())"""
 # "Procesando datos en la laptop". 
 # Crea una instancia de Laptop y muestra los resultados de los métodos.
 
-class Dispositivo():
+"""class Dispositivo():
     
     #Métodos
     def encender(self):
@@ -120,4 +120,35 @@ class Laptop(Computadora):
 laptop = Laptop()
 
 print(laptop.encender())
-print(laptop.procesar_datos())
+print(laptop.procesar_datos())"""
+
+# 4.- Crea una clase base llamada Vehiculo con un atributo marca y un método arrancar. 
+# Luego, crea una clase derivada llamada Coche que herede de Vehiculo y añada 
+# un atributo numero_puertas y un método abrir_puertas. 
+# Crea una instancia de Coche y muestra sus atributos y métodos.
+
+class Vehiculo:
+    
+    #Métodos
+    def __init__(self, marca):
+        self.marca = marca
+        
+    def arrancar(self):
+        return 'El vehiculo está arrancando'
+    
+class Coche(Vehiculo):
+    
+    #Métodos
+    def __init__(self, marca, numero_puertas):
+        super().__init__(marca)
+        self.numero_puertas = numero_puertas
+    
+    def abrir_puertas(self):
+        return f'Abrir {self.numero_puertas} puertas'
+    
+coche = Coche('Cupra', 5)
+
+print(f'Marca del coche: {coche.marca}')
+print(coche.arrancar())
+print(f'El coche tiene {coche.numero_puertas} puertas')
+print(coche.abrir_puertas())

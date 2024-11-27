@@ -67,7 +67,7 @@ print(bicicleta)"""
 # de Animal y sobrescriba el método moverse para devolver "Estoy corriendo". 
 # Crea una instancia de Perro y muestra los resultados de los métodos.
 
-class SerVivo():
+"""class SerVivo():
     
     #Métodos
     def respirar(self):
@@ -88,4 +88,36 @@ class Perro(Animal):
 perro = Perro()
 
 print(perro.moverse())
-print(perro.respirar())
+print(perro.respirar())"""
+
+# 3. - Crea una clase base llamada Dispositivo con un método encender que 
+# devuelva "El dispositivo está encendido". 
+# Luego, crea una clase derivada llamada Computadora que herede de Dispositivo 
+# y añada un método procesar_datos que devuelva "Procesando datos". 
+# Finalmente, crea una clase derivada llamada Laptop que herede de 
+# Computadora y sobrescriba el método procesar_datos para devolver 
+# "Procesando datos en la laptop". 
+# Crea una instancia de Laptop y muestra los resultados de los métodos.
+
+class Dispositivo():
+    
+    #Métodos
+    def encender(self):
+        return 'El dispositivo está encendido'
+    
+class Computadora(Dispositivo):
+    
+    #Métodos
+    def procesar_datos(self):
+        return 'Procesando datos'
+    
+class Laptop(Computadora):
+    
+    #Métodos
+    def procesar_datos(self):
+        return 'Procesando datos en la laptop'
+
+laptop = Laptop()
+
+print(laptop.encender())
+print(laptop.procesar_datos())
